@@ -112,14 +112,14 @@
   <script>
     // Redirect to homepage after 2 seconds
     setTimeout(() => {
-      window.location.href = 'pages/homepage_dual_market_technology_platform.html';
+      window.location.href = '/homepage_dual_market_technology_platform.html';
     }, 2000);
 
     // Fallback redirect
     window.addEventListener('load', () => {
       setTimeout(() => {
         if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/')) {
-          window.location.replace('pages/homepage_dual_market_technology_platform.html');
+          window.location.replace('/homepage_dual_market_technology_platform.html');
         }
       }, 3000);
     });
